@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+
+
+</head>
+<body>
+<header>
+
+    <nav>
+        <img class="logo" src="saved-images/logo1.png" alt="logo">
+        <ul class="nav__links">
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="zespoly">Zespoły</a></li>
+            <li><a href="terminarz">Terminarz</a></li>
+
+        </ul>
+        <button class="dodajBtn"><a href="/dodaj">Dodaj</a></button>
+        <button class="wyszukajBtn"><a href="/search">Wyszukaj</a></button>
+    </nav>
+
+</header>
+<div class="rankingBox">
+    <h3>Zawodnicy</h3>
+</div>
+<div class="linia">
+</div>
+<table class="tableContainer">
+    <table>
+        <tbody>
+        <tr th:each="driver : ${listDrivers}">
+            <td id="u1" th:text="${driver.id}"></td>
+            <td id="u2"><img th:src="@{${driver.logoPath}}"/></td>
+            <td id="u3" th:text="${driver.nameAndSurename}"></td>
+            <td id="u4" th:text="${driver.team}"></td>
+            <td id="u5" th:text="${driver.nationality} "></td>
+            <td id="u6" th:text="${driver.points} + ' PKT' "></td>
+        </tr>
+        </tbody>
+    </table>
+</table>
+
+</body>
+<footer>
+    <div class="footerText">
+        <img id="footerJpg" src="saved-images/footer.png"></img>
+        <h3>@2021 Patryk Okrój</h3>
+    </div>
+</footer>
+</html>

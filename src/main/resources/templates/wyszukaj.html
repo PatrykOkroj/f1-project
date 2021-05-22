@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1</title>
+  <link rel="stylesheet" type="text/css" href="/css/wyszukajStyles.css"/>
+</head>
+<body>
+<header>
+
+  <nav>
+    <img class="logo" src="logo1.png" alt="logo">
+    <ul class="nav__links">
+      <li><a href="/">Strona Główna</a></li>
+      <li><a href="zespoly">Zespoły</a></li>
+      <li><a href="terminarz">Terminarz</a></li>
+
+    </ul>
+    <button class="dodajBtn"><a href="/dodaj">Dodaj</a></button>
+    <button class="wyszukajBtn"><a href="/search">Wyszukaj</a></button>
+  </nav>
+</header>
+<div class="rankingBox">
+  <h3>Wyszukaj Kierowcę</h3>
+</div>
+<div class="linia">
+</div>
+
+<form class="formContainer" th:action="@{/search}" method="get">
+    <label for="search">Wpisz frazę:</label>&emsp;
+    <input type="search" id="search" name="keyword" size="50" placeholder="keyword" required><br><br>
+    <input type="submit" value="Search" class="searchDriver">
+</form>
+
+<div class="filterBtns">
+  <h3>Filtry: </h3>
+  <button class="nazwiskoBtn">Nazwisko</button><br>
+  <button class="zespolBtn">Zespół</button><br>
+  <button class="narodowoscBtn">Narodowość</button>
+</div>
+<div class="btnsContainer">
+  <button class="searchDriver">Szukaj</button>
+</div>
+</body>
+<footer>
+  <div class="footerText">
+    <img id="footerJpg" src="footer.png"></img>
+    <h3>@2021 Patryk Okrój</h3>
+  </div>
+</footer>
+</html>

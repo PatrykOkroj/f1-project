@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+    line-height: 80px;
+    background: rgb(225, 6, 0);
+}
+.logo{
+    float: left;
+}
+.nav__links{
+    float: left;
+}
+
+.nav__links li {
+    float:left;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    list-style: none;
+}
+
+.nav__links li a {
+    color:white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav__links li:hover {
+    background: rgb(51,51,51);
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dodajBtn{
+    position: absolute;
+    left:1335px;
+    top:0px;
+    width:84px;
+    height:80px;
+    background-color: rgb(225, 6, 0);
+    border-radius: 0px;
+    border-width: 0px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.dodajBtn:hover{
+    background: rgb(51,51,51);
+}
+.wyszukajBtn{
+    position: absolute;
+    left:1425px;
+    top:0px;
+    width:84px;
+    height:80px;
+    background-color: rgb(225, 6, 0);
+    border-radius: 0px;
+    border-width: 0px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.wyszukajBtn:hover{
+    background: rgb(51,51,51);
+}
+.zalogujBtn{
+    position: absolute;
+    left:1400px;
+    top:0px;
+    width:84px;
+    height:80px;
+    background-color: rgb(225, 6, 0);
+    border-radius: 0px;
+    border-width: 0px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.zalogujBtn:hover{
+    background: rgb(51,51,51);
+}
+
+.rankingBox{
+    position: absolute;
+    left:0px;
+    top:100px;
+    width:150px;
+    height:25px;
+    background-color: rgb(225, 6, 0);
+    border-radius: 0px;
+    border-width: 0px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.linia{
+    position: absolute;
+    left:0px;
+    top:124px;
+    width:100%;
+    height:2px;
+    background-color: rgb(225, 6, 0);
+}
+
+.formContainer{
+    margin-top: 190px;
+    text-align: center;
+}
+
+.btnsContainer{
+    text-align: center;
+}
+
+input{
+    border: 2px solid rgb(225, 6, 0);
+    height: 20px;
+    width: 220px;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+textarea{
+    border: 2px solid rgb(225, 6, 0);
+}
+.loadPhoto{
+    background-color: rgb(225, 6, 0);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.loadPhoto:hover{
+    background: rgb(51,51,51);
+}
+
+.addDriver{
+    background-color: rgb(225, 6, 0);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.addDriver:hover{
+    background: rgb(51,51,51);
+}
+
+#photo{
+    height: 160px;
+    width: 250px;
+}
+
+footer{
+    background-color:rgb(97, 96, 96) ;
+    margin-top: 100px;
+}
+
+.footerText{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.itemValid{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
