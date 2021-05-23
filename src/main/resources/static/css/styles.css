@@ -209,7 +209,9 @@ th, td {
 
 footer{
     background-color:rgb(97, 96, 96) ;
-    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
 }
 
