@@ -62,7 +62,7 @@ public class DriverController {
         if (bindingResult.hasErrors()) {
             return "dodaj";
         } else {
-                driverService.saveDriver(driver);
+                this.driverService.saveDriver(driver);
                 return "redirect:/";
             }
         }
