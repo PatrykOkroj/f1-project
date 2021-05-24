@@ -31,7 +31,7 @@
 
   <label for="search">Wpisz frazę:</label>&emsp;
   <input type="search" id="search" name="keyword" size="50" placeholder="fraza..." required><br><br>
-  <input type="submit" value="Search" class="searchDriver">
+  <input type="submit" value="Szukaj" class="searchDriver">
 
 </form>
 
@@ -40,11 +40,11 @@
       <tbody>
       <tr th:each="driver : ${searchResult}">
         <td id="u1" th:text="${driver.id} - 4"></td>
-        <td id="u2"><img th:src="@{${driver.logoPath}}"/></td>
-        <td id="u3" th:text="${driver.nameAndSurename}"></td>
-        <td id="u4" th:text="${driver.team}"></td>
-        <td id="u5" th:text="${driver.nationality} "></td>
-        <td id="u6" th:text="${driver.points} + ' PKT' "></td>
+<!--        <td id="u2"><img th:src="@{${driver.logoPath}}"/></td>-->
+        <td id="u2" th:text="${driver.nameAndSurename}"></td>
+        <td id="u3" th:text="${driver.team}"></td>
+        <td id="u4" th:text="${driver.nationality} "></td>
+        <td id="u5" th:text="${driver.points} + ' PKT' "></td>
       </tr>
       </tbody>
     </table>

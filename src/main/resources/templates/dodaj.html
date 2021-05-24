@@ -43,8 +43,6 @@
     <input type="text" id="nationality" th:field="*{nationality}"><br><br>
     <div th:if="${#fields.hasErrors('nationality')}" th:errors="*{nationality}" class="itemValid">Podaj narodowość</div>
 
-    <label for="fileImage">Zdjęcie(250x160):</label><br>
-    <input type="file" name="fileImage" id="fileImage" accept="image/png, image/jpeg"  style="height: 160px; width: 250px;" ><br><br>
 
     <button type="submit" class="addDriver">Dodaj Kierowcę</button>
   </form>
