@@ -62,27 +62,11 @@ public class DriverController {
         if (bindingResult.hasErrors()) {
             return "dodaj";
         } else {
-
-            String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
-            driver.setLogo(fileName);
-            Driver savedDriver = driverService.saveDriver(driver);
-
-            String uploadDir = "./saved-images";
-            Path uploadPath = Paths.get(uploadDir);
-
-            if (!Files.exists(uploadPath)) {
-                Files.createDirectories(uploadPath);
+                driverService.saveDriver(driver);
+                return "redirect:/";
             }
-            try (InputStream inputStream = multipartFile.getInputStream()) {
-                Path filePath = uploadPath.resolve(fileName);
-                Files.copy(inputStream, filePath, StandardCopyOption.REPLACE_EXISTING);
-                System.out.println(filePath.toFile().getAbsolutePath());
-            } catch (IOException e) {
-                throw new IOException("Could not save image: " + fileName);
-            }
-            return "redirect:/";
         }
-    }
+
 
     @GetMapping("/search")
     public String search(@Param("keyword") String keyword, Model model){
