@@ -57,14 +57,9 @@ public class DriverController {
     }
 
     @PostMapping("/saveDriver")
-    public String saveDriver(@Valid @ModelAttribute("driver") Driver driver, BindingResult bindingResult,
-                             @RequestParam("fileImage") MultipartFile multipartFile) throws IOException {
-        if (bindingResult.hasErrors()) {
-            return "dodaj";
-        } else {
-                this.driverService.saveDriver(driver);
+    public String saveDriver(@Valid @ModelAttribute("driver") Driver driver){
+                driverService.saveDriver(driver);
                 return "redirect:/";
-            }
         }
 
 
