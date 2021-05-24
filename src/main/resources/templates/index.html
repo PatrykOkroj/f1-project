@@ -37,10 +37,10 @@
         <tr th:each="driver : ${listDrivers}">
             <td id="u1" th:text="${driver.id} - 4"></td>
 <!--            <td id="u2"><img th:src="@{${driver.logoPath}}"></td>-->
-            <td id="u2" th:text="${driver.nameAndSurename}"></td>
-            <td id="u3" th:text="${driver.team}"></td>
-            <td id="u4" th:text="${driver.nationality} "></td>
-            <td id="u5" th:text="${driver.points} + ' PKT' "></td>
+            <td id="u3" th:text="${driver.nameAndSurename}"></td>
+            <td id="u4" th:text="${driver.team}"></td>
+            <td id="u5" th:text="${driver.nationality} "></td>
+            <td id="u6" th:text="${driver.points} + ' PKT' "></td>
         </tr>
         </tbody>
     </table>
