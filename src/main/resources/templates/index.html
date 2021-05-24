@@ -36,7 +36,7 @@
         <tbody>
         <tr th:each="driver : ${listDrivers}">
             <td id="u1" th:text="${driver.id} - 4"></td>
-            <td id="u2"><img th:src="@{${driver.logoPath}}"/></td>
+            <td id="u2"><img th:src="@{${driver.logoPath}}"></td>
             <td id="u3" th:text="${driver.nameAndSurename}"></td>
             <td id="u4" th:text="${driver.team}"></td>
             <td id="u5" th:text="${driver.nationality} "></td>
@@ -49,7 +49,7 @@
 </body>
 <footer>
     <div class="footerText">
-        <img id="footerJpg" src="https://i.ibb.co/pn346zw/footer.png"></img>
+        <img id="footerJpg" src="./saved-images/footer.png">
         <h3>@2021 Patryk Okrój</h3>
     </div>
 </footer>
