@@ -57,10 +57,14 @@ public class DriverController {
     }
 
     @PostMapping("/saveDriver")
-    public String saveDriver(@Valid @ModelAttribute("driver") Driver driver){
-                driverService.saveDriver(driver);
-                return "redirect:/";
+    public String saveDriver(@Valid @ModelAttribute("driver") Driver driver, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "dodaj";
+        } else {
+            driverService.saveDriver(driver);
+            return "redirect:/";
         }
+    }
 
 
     @GetMapping("/search")
